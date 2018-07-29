@@ -88,8 +88,10 @@ ubuntu_initialize() {
 	$primary_domain
 	EOF
 
+/etc/init.d/hostname.sh start
+
 	echo "The System will now reboot!"
-	reboot
+#	reboot
 }
 
 
